@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Form</title>
+    <!--Google Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="./assets/css/estilos.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>GET IN TOUCH</h1>
+      <p>Have any questions or suggestions? Drop us a message</p>
+      <form
+        method="POST"
+        name="contactform"
+        action="https://formspree.io/f/xvgponkv"
+      >
+        <div class="row">
+          <div class="column">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name here"
+            />
+          </div>
+          <div class="column">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email here"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Your subject here"
+            />
+          </div>
+          <div class="column">
+            <label for="contact">Contact Number</label>
+            <input
+              type="tel"
+              id="contact"
+              name="contact"
+              placeholder="Your phone number here"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <label for="issue">Describe your issue</label>
+            <textarea
+              id="issue"
+              name="issue"
+              placeholder="Describe your issue in detail here"
+              rows="3"
+            ></textarea>
+          </div>
+        </div>
+        <div class="btn"><button onclick="openTab();">Submit</button></div>
+      </form>
+    </div>
+
+    <script>
+      function openTab() {
+        window.open("./form-completed.html", "_blank");
+      }
+
+      //   function closeWin() {
+      //     window.close("", "_parent");
+      //   }
+    </script>
+  </body>
+</html>

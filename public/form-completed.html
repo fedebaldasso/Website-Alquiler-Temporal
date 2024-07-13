@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solicitud Pendiente</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #f2f2f2;
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      h2 {
+        color: #212529;
+        text-align: center;
+        padding-top: 20px;
+      }
+
+      h3 {
+        color: #212529;
+        margin: 10px;
+        text-align: center;
+      }
+
+      .modal {
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        animation: modal 2s 0.2s forwards;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 100;
+      }
+
+      .contenido {
+        margin: auto;
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        position: sticky;
+      }
+
+      #cerrar {
+        display: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .close {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+
+      #btn-cerrar {
+        width: 100px;
+        height: 50px;
+        color: white; /*  */
+        background: #f08001;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+      }
+
+      #btn-cerrar:hover {
+        background: #d44039;
+        cursor: pointer;
+      }
+
+      @media screen and (max-width: 800px) {
+        .contenido {
+          width: 90%;
+        }
+      }
+
+      #cerrar:checked + label,
+      #cerrar:checked ~ .modal {
+        display: none;
+      }
+
+      @keyframes modal {
+        100% {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+
+      /* .container {
+        background-color: white;
+        width: 60%;
+        height: 20%;
+        margin-left: 20%;
+        margin-top: 10%;
+        justify-content: center;
+      }
+
+      .relleno {
+        height: 1500px;
+      } */
+    </style>
+  </head>
+
+  <body>
+    <input type="checkbox" id="cerrar" />
+    <div class="modal">
+      <div class="contenido" id="ventana">
+        <h2>Solicitud Pendiente</h2>
+        <br />
+        <h3>
+          Consulte el panel de "Notificaciones" de Ciudadano Digital San Juan
+          para ver el estado de su trámite.
+          <br />
+          <br />
+          Muchas Gracias.
+        </h3>
+        <br />
+        <div class="close">
+          <label for="cerrar" id="btn-cerrar"
+            ><h4>
+              <!-- <a href="https://mi.sanjuan.gob.ar/inicio" target="_parent"
+                >Cerrar</a
+              > -->
+              <a href="./index.html" target="_parent">Cerrar</a>
+            </h4></label
+          >
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.onload = funciones;
+      function funciones() {
+        setTimeout(subir, 0.5);
+        setTimeout(refresco, 10000);
+      }
+
+      function subir() {
+        window.parent.location.href = "#";
+      }
+
+      function refresco() {
+        window.parent.location.href = "./index.html";
+      }
+    </script>
+
+    <!-- <div class="container">
+      <h2>Solicitud Pendiente.</h2>
+      <h3>
+        Consulte el panel de "Notificaciones" de Ciudadano Digital San Juan
+        <br />
+        para ver el estado de su trámite.
+        <br />
+        <br />
+        Muchas Gracias.
+      </h3>
+    </div> -->
+
+    <!-- <div class="relleno"></div>
+
+    <div class="container">
+      <h2>Solicitud Pendiente.</h2>
+      <h3>
+        Consulte el panel de "Notificaciones" de Ciudadano Digital San Juan
+        <br />
+        para ver el estado de su trámite.
+        <br />
+        <br />
+        Muchas Gracias.
+      </h3>
+    </div> -->
+  </body>
+</html>
