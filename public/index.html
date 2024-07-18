@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Aconcagua Housing</title>
+    <title>Aconcagua Apartment</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="./assets/img/mountain.png" rel="icon" />
+    <link href="./assets/img/mountain.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
     <link
@@ -37,33 +37,30 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
-
-    <!-- =======================================================
-  * Template Name: Tempo
-  * Template URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
   </head>
 
   <body>
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
       <div class="container d-flex align-items-center justify-content-between">
-        <h1 class="logo"><a href="index.html">Aconcagua Housing</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <div class="inicio">
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <a href="index.html" class="logo"
+            ><img src="./assets/img/mountain.png" alt="" class="img-fluid"
+          /></a>
+          <h1 class="logo"><a href="index.html">Aconcagua</a></h1>
+          <h3 class="logo1"><a href="index.html">Apartment</a></h3>
+        </div>
 
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="#about">About</a></li>
-            <li><a class="nav-link scrollto" href="#services">Services</a></li>
+            <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+            <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
+            <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
             <li>
-              <a class="nav-link scrollto" href="#portfolio">Portfolio</a>
+              <a class="nav-link scrollto" href="#portfolio">Lugares</a>
             </li>
-            <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+            <li><a class="nav-link scrollto" href="#pricing">Precios</a></li>
             <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li>
             <li><a href="blog.html">Blog</a></li> -->
             <!-- <li class="dropdown">
@@ -90,8 +87,17 @@
                 <li><a href="#">Drop Down 4</a></li>
               </ul>
             </li> -->
-            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-            <!-- <li><a class="nav-link scrollto" href="./contact-us.html">Write Us</a></li> -->
+            <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+            <li>
+              <a class="lang" href="index.html"
+                ><img src="./assets/img/world.png" />
+              </a>
+            </li>
+            <li>
+              <a class="lang" href=""
+                ><img src="./assets/img/united-states.png" />
+              </a>
+            </li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
@@ -103,12 +109,10 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero">
       <div class="hero-container">
-        <h3>Welcome to <strong>Aconcagua Housing</strong></h3>
+        <h3>Bienvenido a <strong>Aconcagua Apartment</strong></h3>
         <h1>Alojamiento en Mendoza</h1>
-        <h2>
-          We are team of talented designers making websites with Bootstrap
-        </h2>
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        <h2>Hospedate con nosotros y disfruta de ésta hermosa provincia.</h2>
+        <a href="#about" class="btn-get-started scrollto">Comenzemos</a>
       </div>
     </section>
     <!-- End Hero -->
@@ -118,8 +122,8 @@
       <section id="about" class="about">
         <div class="container">
           <div class="section-title">
-            <h2>About</h2>
-            <h3>Learn More <span>About Us</span></h3>
+            <h2>Nosotros</h2>
+            <h3>Sobre <span>Nosotros</span></h3>
             <p>
               Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
               adipisci expedita at voluptas atque vitae autem.
@@ -166,12 +170,11 @@
       <section id="services" class="services">
         <div class="container">
           <div class="section-title">
-            <h2>Services</h2>
-            <h3>We do offer awesome <span>Services</span></h3>
-            <p>
-              Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
-              adipisci expedita at voluptas atque vitae autem.
-            </p>
+            <h2>Servicios</h2>
+            <h3>
+              El departamento cuenta con los siguientes <span>Servicios</span>
+            </h3>
+            <p>Hace click para ver las fotos.</p>
           </div>
 
           <div class="row">
@@ -179,11 +182,13 @@
               class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
             >
               <div class="icon-box">
-                <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+                <div class="icon"><i class="bx bxs-bed"></i></div>
+                <h4 class="title">
+                  <a href="./habitaciones.html">Dormitorios</a>
+                </h4>
                 <p class="description">
-                  Voluptatum deleniti atque corrupti quos dolores et quas
-                  molestias excepturi
+                  Dormitorio principal con cama matrimonial y segundo dormitorio
+                  con dos camas individuales.
                 </p>
               </div>
             </div>
@@ -192,11 +197,26 @@
               class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
             >
               <div class="icon-box">
-                <div class="icon"><i class="bx bx-file"></i></div>
-                <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+                <div class="icon">
+                  <!-- <i class="bx bxs-bath"></i> -->
+                  <svg
+                    id="couch"
+                    role="img"
+                    fill="#7b0323"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Apache CouchDB</title>
+                    <path
+                      d="M19.5 14.625c0 .995-.524 1.482-1.5 1.5H6c-.976-.018-1.5-.505-1.5-1.5s.524-1.482 1.5-1.5h12c.976.018 1.5.505 1.5 1.5m-1.5 2.25H6c-.976.018-1.5.505-1.5 1.5s.524 1.482 1.5 1.5h12c.976-.018 1.5-.505 1.5-1.5s-.524-1.482-1.5-1.5m3.75-8.248v-.001c-.976.017-1.5.504-1.5 1.499v8.25c0 .995.524 1.482 1.5 1.5v-.002c1.464-.052 2.25-1.514 2.25-4.498v-3.75c0-1.99-.786-2.964-2.25-2.998m-19.5-.001C.786 8.662 0 9.637 0 11.626v3.75c0 2.984.786 4.446 2.25 4.498v.001c.976-.017 1.5-.504 1.5-1.499v-8.25c0-.995-.524-1.482-1.5-1.5m19.5-.75c0-2.486-1.31-3.705-3.75-3.748v-.002H6v.002c-2.44.043-3.75 1.262-3.75 3.748v.001c1.464.026 2.25.757 2.25 2.249s.786 2.223 2.25 2.249v.001h10.5v-.001c1.464-.026 2.25-.757 2.25-2.249s.786-2.223 2.25-2.249z"
+                    />
+                  </svg>
+                </div>
+                <h4 class="title">
+                  <a href="./living.html">Living/Comedor</a>
+                </h4>
                 <p class="description">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore
+                  Ambiente iluminado y cálido, con sofá y mesa para 4 personas.
                 </p>
               </div>
             </div>
@@ -205,11 +225,11 @@
               class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
             >
               <div class="icon-box">
-                <div class="icon"><i class="bx bx-tachometer"></i></div>
-                <h4 class="title"><a href="">Magni Dolores</a></h4>
+                <div class="icon"><i class="bx bxs-coffee-alt"></i></div>
+                <h4 class="title"><a href="./living.html">Cocina</a></h4>
                 <p class="description">
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui officia
+                  Equipada con todo lo necesario para que puedas preparar tus
+                  comidas.
                 </p>
               </div>
             </div>
@@ -218,12 +238,11 @@
               class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
             >
               <div class="icon-box">
-                <div class="icon"><i class="bx bx-world"></i></div>
-                <h4 class="title"><a href="">Nemo Enim</a></h4>
-                <p class="description">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis
-                </p>
+                <div class="icon"><i class="bx bxs-car"></i></div>
+                <h4 class="title">
+                  <a href="./cochera.html">Estacionamiento Privado</a>
+                </h4>
+                <p class="description">Cochera cubierta.</p>
               </div>
             </div>
           </div>
@@ -235,85 +254,144 @@
       <section id="features" class="features">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 col-md-4 col-6 col-6">
+            <div class="col-lg-3 col-md-4 col-6 mt-4">
               <div class="icon-box">
-                <i class="ri-store-line" style="color: #ffbb2c"></i>
-                <h3><a href="">Lorem Ipsum</a></h3>
+                <img
+                  class="iconos-servicios"
+                  src="./assets/img/wifi.png"
+                  alt=""
+                />
+                <h3>WiFi</h3>
               </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-6">
+
+            <div class="col-lg-3 col-md-4 col-6 mt-4">
               <div class="icon-box">
-                <i class="ri-bar-chart-box-line" style="color: #5578ff"></i>
-                <h3><a href="">Dolor Sitema</a></h3>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6 mt-4 mt-md-0">
-              <div class="icon-box">
-                <i class="ri-calendar-todo-line" style="color: #e80368"></i>
-                <h3><a href="">Sed perspiciatis</a></h3>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6 mt-4 mt-lg-0">
-              <div class="icon-box">
-                <i class="ri-paint-brush-line" style="color: #e361ff"></i>
-                <h3><a href="">Magni Dolores</a></h3>
+                <img
+                  class="iconos-servicios"
+                  src="./assets/img/ice.png"
+                  alt=""
+                />
+                <h3>Aire Acondicionado</h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-6 mt-4">
               <div class="icon-box">
-                <i class="ri-database-2-line" style="color: #47aeff"></i>
-                <h3><a href="">Nemo Enim</a></h3>
+                <img
+                  class="iconos-servicios"
+                  src="./assets/img/heater.png"
+                  alt=""
+                />
+                <h3>Calefacción</h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-6 mt-4">
               <div class="icon-box">
-                <i class="ri-gradienter-line" style="color: #ffa76e"></i>
-                <h3><a href="">Eiusmod Tempor</a></h3>
+                <img
+                  class="iconos-servicios"
+                  src="./assets/img/fan.png"
+                  alt=""
+                />
+                <h3>Ventilador Portátil</h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-6 mt-4">
               <div class="icon-box">
-                <i class="ri-file-list-3-line" style="color: #11dbcf"></i>
-                <h3><a href="">Midela Teren</a></h3>
+                <img
+                  class="iconos-servicios"
+                  src="./assets/img/smart-tv.png"
+                  alt=""
+                />
+                <h3>Smart TV</h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-6 mt-4">
               <div class="icon-box">
-                <i class="ri-price-tag-2-line" style="color: #4233ff"></i>
-                <h3><a href="">Pira Neve</a></h3>
+                <img
+                  class="iconos-servicios"
+                  src="./assets/img/refrigerator.png"
+                  alt=""
+                />
+                <h3>Heladera</h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-6 mt-4">
               <div class="icon-box">
-                <i class="ri-anchor-line" style="color: #b2904f"></i>
-                <h3><a href="">Dirada Pack</a></h3>
+                <img
+                  class="iconos-servicios"
+                  src="./assets/img/oven.png"
+                  alt=""
+                />
+                <h3>Cocina</h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-6 mt-4">
               <div class="icon-box">
-                <i class="ri-disc-line" style="color: #b20969"></i>
-                <h3><a href="">Moton Ideal</a></h3>
+                <img
+                  class="iconos-servicios"
+                  src="./assets/img/microwave.png"
+                  alt=""
+                />
+                <h3>Microondas</h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-6 mt-4">
               <div class="icon-box">
-                <i class="ri-base-station-line" style="color: #ff5828"></i>
-                <h3><a href="">Verdo Park</a></h3>
+                <img
+                  class="iconos-servicios"
+                  src="./assets/img/coffee-machine.png"
+                  alt=""
+                />
+                <h3>Cafetera</h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-6 mt-4">
               <div class="icon-box">
-                <i class="ri-fingerprint-line" style="color: #29cc61"></i>
-                <h3><a href="">Flavor Nivelanda</a></h3>
+                <img
+                  class="iconos-servicios"
+                  src="./assets/img/electric-kettle.png"
+                  alt=""
+                />
+                <h3>Pava Eléctrica</h3>
               </div>
             </div>
+            <div class="col-lg-3 col-md-4 col-6 mt-4">
+              <div class="icon-box">
+                <img
+                  class="iconos-servicios"
+                  src="./assets/img/toaster.png"
+                  alt=""
+                />
+                <h3>Tostadora</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mt-4">
+              <div class="icon-box">
+                <img
+                  class="iconos-servicios"
+                  src="./assets/img/iron.png"
+                  alt=""
+                />
+                <h3>Plancha</h3>
+              </div>
+            </div>
+            <!-- <div class="col-lg-3 col-md-4 col-6 mt-4">
+              <div class="icon-box">
+                <img
+                  class="iconos-servicios"
+                  src="./assets/img/iron.png"
+                  alt=""
+                />
+                <h3><a href="">Plancha</a></h3>
+              </div>
+            </div> -->
           </div>
         </div>
       </section>
       <!-- End Features Section -->
 
       <!-- ======= Cta Section ======= -->
-      <section id="cta" class="cta">
+      <!-- <section id="cta" class="cta">
         <div class="container">
           <div class="text-center">
             <h3>Call To Action</h3>
@@ -326,28 +404,28 @@
             <a class="cta-btn" href="#">Call To Action</a>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- End Cta Section -->
 
       <!-- ======= Portfolio Section ======= -->
       <section id="portfolio" class="portfolio">
         <div class="container">
           <div class="section-title">
-            <h2>Portfolio</h2>
-            <h3>Check our <span>Portfolio</span></h3>
+            <h2>Lugares</h2>
+            <h3><span>Lugares</span> para visitar en <span>Mendoza</span></h3>
             <p>
-              Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
-              adipisci expedita at voluptas atque vitae autem.
+              La provincia de Mendoza cuenta con amplia variedad de maravillosos
+              lugares para conocer.
             </p>
           </div>
 
           <div class="row">
             <div class="col-lg-12 d-flex justify-content-center">
               <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-card">Card</li>
-                <li data-filter=".filter-web">Web</li>
+                <li data-filter="*" class="filter-active">Todos</li>
+                <li data-filter=".filter-app">Bodegas</li>
+                <li data-filter=".filter-card">Centros de Ski</li>
+                <li data-filter=".filter-web">Ciudad</li>
               </ul>
             </div>
           </div>
@@ -355,22 +433,23 @@
           <div class="row portfolio-container">
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <img
-                src="assets/img/portfolio/portfolio-1.jpg"
+                src="./assets/img/portfolio/salentein.jpg"
                 class="img-fluid"
                 alt=""
               />
               <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <a
+                <h4>Bodega Salentein</h4>
+                <p>Valle de Uco</p>
+                <!-- <a
                   href="assets/img/portfolio/portfolio-1.jpg"
                   data-gallery="portfolioGallery"
                   class="portfolio-lightbox preview-link"
                   title="App 1"
                   ><i class="bx bx-plus"></i
-                ></a>
+                ></a> -->
                 <a
-                  href="portfolio-details.html"
+                  href="https://www.bodegasalentein.com/es/killka/actividades.html"
+                  target="_blank"
                   class="details-link"
                   title="More Details"
                   ><i class="bx bx-link"></i
@@ -380,22 +459,23 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
               <img
-                src="assets/img/portfolio/portfolio-2.jpg"
+                src="./assets/img/portfolio/Mendoza_-_Park_gate.jpg"
                 class="img-fluid"
                 alt=""
               />
               <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <a
+                <h4>Parque General San Martín</h4>
+                <p>Ciudad</p>
+                <!-- <a
                   href="assets/img/portfolio/portfolio-2.jpg"
                   data-gallery="portfolioGallery"
                   class="portfolio-lightbox preview-link"
                   title="Web 3"
                   ><i class="bx bx-plus"></i
-                ></a>
+                ></a> -->
                 <a
-                  href="portfolio-details.html"
+                  href="https://www.mendoza.gov.ar/elparque/"
+                  target="_blank"
                   class="details-link"
                   title="More Details"
                   ><i class="bx bx-link"></i
@@ -405,22 +485,23 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <img
-                src="assets/img/portfolio/portfolio-3.jpg"
+                src="./assets/img/portfolio/catena-zapata.jpg"
                 class="img-fluid"
                 alt=""
               />
               <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <a
+                <h4>Bodega Catena Zapata</h4>
+                <p>Luján de Cuyo</p>
+                <!-- <a
                   href="assets/img/portfolio/portfolio-3.jpg"
                   data-gallery="portfolioGallery"
                   class="portfolio-lightbox preview-link"
                   title="App 2"
                   ><i class="bx bx-plus"></i
-                ></a>
+                ></a> -->
                 <a
-                  href="portfolio-details.html"
+                  href="https://catenazapata.com/es/index-es.php"
+                  target="_blank"
                   class="details-link"
                   title="More Details"
                   ><i class="bx bx-link"></i
@@ -430,22 +511,23 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
               <img
-                src="assets/img/portfolio/portfolio-4.jpg"
+                src="./assets/img/portfolio/las-lenas-2.jpg"
                 class="img-fluid"
                 alt=""
               />
               <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <a
+                <h4>Valle de Las Leñas</h4>
+                <p>Malargüe</p>
+                <!-- <a
                   href="assets/img/portfolio/portfolio-4.jpg"
                   data-gallery="portfolioGallery"
                   class="portfolio-lightbox preview-link"
                   title="Card 2"
                   ><i class="bx bx-plus"></i
-                ></a>
+                ></a> -->
                 <a
-                  href="portfolio-details.html"
+                  href="https://laslenas.com/"
+                  target="_blank"
                   class="details-link"
                   title="More Details"
                   ><i class="bx bx-link"></i
@@ -455,22 +537,23 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
               <img
-                src="assets/img/portfolio/portfolio-5.jpg"
+                src="./assets/img/portfolio/Palmares-Open-Mall.jpg"
                 class="img-fluid"
                 alt=""
               />
               <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <a
+                <h4>Palmares Open Mall</h4>
+                <p>Godoy Cruz</p>
+                <!-- <a
                   href="assets/img/portfolio/portfolio-5.jpg"
                   data-gallery="portfolioGallery"
                   class="portfolio-lightbox preview-link"
                   title="Web 2"
                   ><i class="bx bx-plus"></i
-                ></a>
+                ></a> -->
                 <a
-                  href="portfolio-details.html"
+                  href="https://palmares.com.ar/"
+                  target="_blank"
                   class="details-link"
                   title="More Details"
                   ><i class="bx bx-link"></i
@@ -480,22 +563,49 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <img
-                src="assets/img/portfolio/portfolio-6.jpg"
+                src="./assets/img/portfolio/renacer.jpg"
                 class="img-fluid"
                 alt=""
               />
               <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <a
+                <h4>Bodega Renacer</h4>
+                <p>Luján de Cuyo</p>
+                <!-- <a
                   href="assets/img/portfolio/portfolio-6.jpg"
                   data-gallery="portfolioGallery"
                   class="portfolio-lightbox preview-link"
                   title="App 3"
                   ><i class="bx bx-plus"></i
-                ></a>
+                ></a> -->
                 <a
-                  href="portfolio-details.html"
+                  href="https://www.bodegarenacer.com.ar/enoturismo"
+                  target="_blank"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <img
+                src="./assets/img/portfolio/trapiche1.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Bodega Trapiche</h4>
+                <p>Maipú</p>
+                <!-- <a
+                  href="assets/img/portfolio/portfolio-6.jpg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="App 3"
+                  ><i class="bx bx-plus"></i
+                ></a> -->
+                <a
+                  href="https://www.trapiche.com.ar/"
+                  target="_blank"
                   class="details-link"
                   title="More Details"
                   ><i class="bx bx-link"></i
@@ -505,22 +615,23 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
               <img
-                src="assets/img/portfolio/portfolio-7.jpg"
+                src="./assets/img/portfolio/penitentes_0.jpg"
                 class="img-fluid"
                 alt=""
               />
               <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <a
+                <h4>Penitentes Park</h4>
+                <p>Ruta Internacional N°7</p>
+                <!-- <a
                   href="assets/img/portfolio/portfolio-7.jpg"
                   data-gallery="portfolioGallery"
                   class="portfolio-lightbox preview-link"
                   title="Card 1"
                   ><i class="bx bx-plus"></i
-                ></a>
+                ></a> -->
                 <a
-                  href="portfolio-details.html"
+                  href="https://www.instagram.com/penitentespark/"
+                  target="_blank"
                   class="details-link"
                   title="More Details"
                   ><i class="bx bx-link"></i
@@ -530,22 +641,23 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
               <img
-                src="assets/img/portfolio/portfolio-8.jpg"
+                src="./assets/img/portfolio/Los-Puquios.jfif"
                 class="img-fluid"
                 alt=""
               />
               <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <a
+                <h4>Los Puquios</h4>
+                <p>Ruta Internacional N°7</p>
+                <!-- <a
                   href="assets/img/portfolio/portfolio-8.jpg"
                   data-gallery="portfolioGallery"
                   class="portfolio-lightbox preview-link"
                   title="Card 3"
                   ><i class="bx bx-plus"></i
-                ></a>
+                ></a> -->
                 <a
-                  href="portfolio-details.html"
+                  href="https://puquios.com.ar/"
+                  target="_blank"
                   class="details-link"
                   title="More Details"
                   ><i class="bx bx-link"></i
@@ -555,22 +667,23 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
               <img
-                src="assets/img/portfolio/portfolio-9.jpg"
+                src="./assets/img/portfolio/labarraca.jpg"
                 class="img-fluid"
                 alt=""
               />
               <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <a
+                <h4>La Barraca Mall</h4>
+                <p>Guaymallén</p>
+                <!-- <a
                   href="assets/img/portfolio/portfolio-9.jpg"
                   data-gallery="portfolioGallery"
                   class="portfolio-lightbox preview-link"
                   title="Web 3"
                   ><i class="bx bx-plus"></i
-                ></a>
+                ></a> -->
                 <a
-                  href="portfolio-details.html"
+                  href="https://labarracaoutlet.com/"
+                  target="_blank"
                   class="details-link"
                   title="More Details"
                   ><i class="bx bx-link"></i
@@ -586,19 +699,16 @@
       <section id="pricing" class="pricing">
         <div class="container">
           <div class="section-title">
-            <h2>Pricing</h2>
-            <h3>Our Competing <span>Prices</span></h3>
-            <p>
-              Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
-              adipisci expedita at voluptas atque vitae autem.
-            </p>
+            <h2>Precios</h2>
+            <h3>Tenemos el <span>Mejor Precio</span></h3>
+            <p>Nuestras opciones según la cantidad de huéspedes.</p>
           </div>
 
           <div class="row">
             <div class="col-lg-4 col-md-6">
               <div class="box">
-                <h3>Free</h3>
-                <h4><sup>$</sup>0<span> / month</span></h4>
+                <h3>2 personas</h3>
+                <h4><sup>$USD</sup>35<span> / día</span></h4>
                 <ul>
                   <li>Aida dere</li>
                   <li>Nec feugiat nisl</li>
@@ -607,16 +717,21 @@
                   <li class="na">Massa ultricies mi</li>
                 </ul>
                 <div class="btn-wrap">
-                  <a href="#" class="btn-buy">Buy Now</a>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=5492616946479&text=Hola!%20Quiero%20realizar%20una%20reserva%20para%202%20personas.%20&#128512;"
+                    class="btn-buy"
+                    target="_blank"
+                    >Reservar</a
+                  >
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
-              <div class="box recommended">
-                <span class="recommended-badge">Recommended</span>
-                <h3>Business</h3>
-                <h4><sup>$</sup>19<span> / month</span></h4>
+              <div class="box">
+                <!-- <span class="recommended-badge">Recommended</span> -->
+                <h3>3 personas</h3>
+                <h4><sup>$USD</sup>40<span> / día</span></h4>
                 <ul>
                   <li>Aida dere</li>
                   <li>Nec feugiat nisl</li>
@@ -625,15 +740,20 @@
                   <li class="na">Massa ultricies mi</li>
                 </ul>
                 <div class="btn-wrap">
-                  <a href="#" class="btn-buy">Buy Now</a>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=5492616946479&text=Hola!%20Quiero%20realizar%20una%20reserva%20para%203%20personas.%20&#128512;"
+                    class="btn-buy"
+                    target="_blank"
+                    >Reservar</a
+                  >
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
               <div class="box">
-                <h3>Developer</h3>
-                <h4><sup>$</sup>29<span> / month</span></h4>
+                <h3>4 personas</h3>
+                <h4><sup>$USD</sup>45<span> / día</span></h4>
                 <ul>
                   <li>Aida dere</li>
                   <li>Nec feugiat nisl</li>
@@ -642,7 +762,12 @@
                   <li>Massa ultricies mi</li>
                 </ul>
                 <div class="btn-wrap">
-                  <a href="#" class="btn-buy">Buy Now</a>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=5492616946479&text=Hola!%20Quiero%20realizar%20una%20reserva%20para%204%20personas.%20&#128512;"
+                    class="btn-buy"
+                    target="_blank"
+                    >Reservar</a
+                  >
                 </div>
               </div>
             </div>
@@ -656,7 +781,7 @@
         <div class="container">
           <div class="section-title">
             <h2>F.A.Q</h2>
-            <h3>Frequently Asked <span>Questions</span></h3>
+            <h3>Preguntas <span>Frecuentes</span></h3>
           </div>
 
           <ul class="faq-list">
@@ -666,16 +791,12 @@
                 class="collapsed question"
                 href="#faq1"
               >
-                Non consectetur a erat nam at lectus urna duis?
+                Reciben mascotas?
                 <i class="bi bi-chevron-down icon-show"></i
                 ><i class="bi bi-chevron-up icon-close"></i>
               </div>
               <div id="faq1" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
-                  volutpat lacus laoreet non curabitur gravida. Venenatis lectus
-                  magna fringilla urna porttitor rhoncus dolor purus non.
-                </p>
+                <p>No, no se recibe ningún tipo de mascota.</p>
               </div>
             </li>
 
@@ -900,18 +1021,19 @@
       <div id="contact" class="contact">
         <div class="container">
           <div class="section-title">
-            <h2>Contact</h2>
-            <h3>Contact <span>Us</span></h3>
+            <h2>Contacto</h2>
+            <h3>Contactános <span></span></h3>
             <p>
-              Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
-              adipisci expedita at voluptas atque vitae autem.
+              Dejanos tu mensaje en el formulario o a través de Whatsapp al
+              número que figura abajo, y nos pondremos en contacto para
+              coordinar tu reserva.
             </p>
           </div>
 
           <div>
             <iframe
               style="border: 0; width: 100%; height: 270px"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9475.418415804268!2d-68.8373134055749!3d-32.89641507051903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e096fc76d0163%3A0x5c01722f98346297!2sD&#39;%20LUXE%20COLOR!5e0!3m2!1ses!2sar!4v1720796415073!5m2!1ses!2sar"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9475.841732228306!2d-68.83304182860101!3d-32.89245761995038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09007fa7343f%3A0x6800da1604e9cb35!2sAconcagua%20Apartment!5e0!3m2!1ses!2sar!4v1721266337869!5m2!1ses!2sar"
               frameborder="0"
               allowfullscreen
             >
@@ -924,8 +1046,8 @@
                 <div class="info">
                   <div class="address">
                     <i class="bi bi-geo-alt"></i>
-                    <h4>Location:</h4>
-                    <p>A108 Adam Street, New York, NY 535022</p>
+                    <h4>Ubicación:</h4>
+                    <p>Lamadrid 618 - Dorrego - Guaymallén - Mendoza</p>
                   </div>
                 </div>
               </div>
@@ -944,11 +1066,12 @@
                 <a
                   class=""
                   href="https://api.whatsapp.com/send?phone=5492616946479&text=Hola!%20Quiero%20consultar%20sobre%20el%20alojamiento!%20"
+                  target="_blank"
                 >
                   <div class="info">
                     <div class="phone">
                       <i class="bi bi-phone"></i>
-                      <h4>Phone:</h4>
+                      <h4>Teléfono:</h4>
                       <p>+54 9 261 6 94-6479</p>
                     </div>
                   </div></a
@@ -964,9 +1087,28 @@
         </div> -->
 
       <div class="contenedor">
-        <a href="./contact-us.html"
-          ><button type="button" class="btn btn-danger">Contact Us</button></a
+        <a href="./contact-us.html" target="_blank"
+          ><button type="button" class="">Formulario de Contacto</button></a
         >
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3>También podes encontrarnos en <span>Airbnb</span></h3>
+          <br />
+          <!-- <p>
+            Dejanos tu mensaje en el formulario o a través de Whatsapp al número
+            que figura abajo, y nos pondremos en contacto para coordinar tu
+            reserva.
+          </p> -->
+          <div class="contenedor">
+            <a
+              href="https://www.airbnb.com.ar/rooms/1173261458188843259?guests=1&adults=1&s=67&unique_share_id=55d4da27-bf19-415a-9ba5-ee0d1ab14e26&source_impression_id=p3_1721087844_P3R8Yt_6fRY-xXJk"
+              target="_blank"
+              ><button type="button" class="">Ir a Airbnb</button></a
+            >
+          </div>
+        </div>
       </div>
 
       <!-- ======= Formulario ======= -->
@@ -1167,7 +1309,7 @@
       <div class="container d-md-flex py-4">
         <div class="me-md-auto text-center text-md-start">
           <div class="copyright">
-            &copy; Copyright <strong><span>Housing</span></strong
+            &copy; Copyright <strong><span>Aconcagua Apartment</span></strong
             >. All Rights Reserved
           </div>
           <div class="credits">
@@ -1207,5 +1349,25 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyC-UgMxti31Y0-cSyAuF9RyQEZbnyQ1iEw",
+        authDomain: "aconcagua-apartment.firebaseapp.com",
+        projectId: "aconcagua-apartment",
+        storageBucket: "aconcagua-apartment.appspot.com",
+        messagingSenderId: "106586951325",
+        appId: "1:106586951325:web:de928ca3959d465cee8e74",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
   </body>
 </html>

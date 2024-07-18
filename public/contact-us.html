@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Form</title>
+    <title>Formulario</title>
+    <!-- Favicons -->
+    <link href="./assets/img/mountain.png" rel="icon" />
+    <link href="./assets/img/mountain.png" rel="apple-touch-icon" />
     <!--Google Font-->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
@@ -13,8 +16,8 @@
   </head>
   <body>
     <div class="container">
-      <h1>GET IN TOUCH</h1>
-      <p>Have any questions or suggestions? Drop us a message</p>
+      <h1>Contactános</h1>
+      <p>Dejanos tu consulta y nos pondremos en contacto.</p>
       <form
         method="POST"
         name="contactform"
@@ -22,12 +25,12 @@
       >
         <div class="row">
           <div class="column">
-            <label for="name">Name</label>
+            <label for="name">Nombre Completo</label>
             <input
               type="text"
               id="name"
               name="name"
-              placeholder="Your name here"
+              placeholder="Ingresa tu nombre completo"
             />
           </div>
           <div class="column">
@@ -36,42 +39,42 @@
               type="email"
               id="email"
               name="email"
-              placeholder="Your email here"
+              placeholder="Ingresa tu email"
             />
           </div>
         </div>
         <div class="row">
           <div class="column">
-            <label for="subject">Subject</label>
+            <label for="subject">Asunto</label>
             <input
               type="text"
               id="subject"
               name="subject"
-              placeholder="Your subject here"
+              placeholder="Ingresa el asunto de tu consulta"
             />
           </div>
           <div class="column">
-            <label for="contact">Contact Number</label>
+            <label for="contact">Número de Contacto</label>
             <input
               type="tel"
               id="contact"
               name="contact"
-              placeholder="Your phone number here"
+              placeholder="Ingresa tu número de contacto"
             />
           </div>
         </div>
         <div class="row">
           <div class="column">
-            <label for="issue">Describe your issue</label>
+            <label for="issue">Mensaje</label>
             <textarea
               id="issue"
               name="issue"
-              placeholder="Describe your issue in detail here"
+              placeholder="Describe tu consulta"
               rows="3"
             ></textarea>
           </div>
         </div>
-        <div class="btn"><button onclick="openTab();">Submit</button></div>
+        <div class="btn"><button onclick="openTab();">Enviar</button></div>
       </form>
     </div>
 
