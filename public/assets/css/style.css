@@ -2137,6 +2137,7 @@ input {
 .iconos-servicios {
   width: 30px;
   margin-right: 15px;
+  /*Con esto le damos el color a los iconos de los servicios*/
   filter: invert(8%) sepia(71%) saturate(5438%) hue-rotate(335deg)
     brightness(87%) contrast(103%);
 }
@@ -2144,4 +2145,16 @@ input {
 .inicio h1,
 img {
   display: inline-block;
+}
+
+#player {
+  cursor: pointer;
+  transition: all 0.8s ease;
+  filter: invert(94%) sepia(6%) saturate(24%) hue-rotate(212deg)
+    brightness(105%) contrast(107%);
+}
+
+#player:hover {
+  transition: all 0.6s ease;
+  filter: brightness(150%);
 }

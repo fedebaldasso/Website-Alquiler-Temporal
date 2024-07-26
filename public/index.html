@@ -98,8 +98,17 @@
                 ><img src="./assets/img/united-states.png" />
               </a>
             </li>
+            <li>
+              <img id="player" src="./assets/img/arrow.png" />
+            </li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
+          <audio
+            autoplay
+            loop
+            id="audio"
+            src="./assets/audio/Warm Abstraction by AudioCoffee.mp3"
+          ></audio>
         </nav>
         <!-- .navbar -->
       </div>
@@ -1677,6 +1686,27 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
+    <!-- Audio Player -->
+    <script>
+      const player = document.getElementById("player");
+
+      // const audio = new Audio();
+      // audio.src = "assets/audio/Warm Abstraction by AudioCoffee.mp3";
+
+      var audio = document.getElementById("audio");
+
+      player.addEventListener("click", function () {
+        if (audio.paused) {
+          audio.play();
+          player.innerHTML = '<i class="bi bi-pause-fill"></i>';
+        } else {
+          audio.pause();
+          player.innerHTML = '<i class="bi bi-play-fill"></i>';
+        }
+      });
+    </script>
+
+    <!-- Firebase -->
     <script type="module">
       // Import the functions you need from the SDKs you need
       import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
