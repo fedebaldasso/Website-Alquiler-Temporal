@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería de Fotos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Favicons -->
+    <link href="./assets/img/mountain.png" rel="icon" />
+    <link href="./assets/img/mountain.png" rel="apple-touch-icon" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/gallery.css" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="./assets/js/gallery.js"></script>
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="slideshow">
+        <span class="btn_cerrar">&times;</span>
+        <div class="botones atras">
+          <box-icon name="left-arrow-circle"></box-icon>
+        </div>
+        <div class="botones adelante">
+          <box-icon name="right-arrow-circle"></box-icon>
+        </div>
+        <img src="" alt="" class="img_slideshow" />
+      </div>
+    </div>
+    <header class="encabezado">
+      <h1>Galería de Fotos</h1>
+    </header>
+    <section class="galeria">
+      <div class="columna">
+        <img src="./assets/img/depto/frente.jpeg" alt="" data-img-mostrar="0" />
+        <img
+          src="./assets/img/depto/comedor.jpeg"
+          alt=""
+          data-img-mostrar="4"
+        />
+        <img
+          src="./assets/img/depto/habitacion.jpeg"
+          alt=""
+          data-img-mostrar="8"
+        />
+        <img
+          src="./assets/img/depto/habitacion4.jpeg"
+          alt=""
+          data-img-mostrar="12"
+        />
+      </div>
+      <div class="columna">
+        <img
+          src="./assets/img/depto/frente1.jpeg"
+          alt=""
+          data-img-mostrar="1"
+        />
+        <img
+          src="./assets/img/depto/comedor1.jpeg"
+          alt=""
+          data-img-mostrar="5"
+        />
+        <img
+          src="./assets/img/depto/habitacion1.jpeg"
+          alt=""
+          data-img-mostrar="9"
+        />
+        <img
+          src="./assets/img/depto/habitacion5.jpeg"
+          alt=""
+          data-img-mostrar="13"
+        />
+      </div>
+      <div class="columna">
+        <img src="./assets/img/depto/living.jpeg" alt="" data-img-mostrar="2" />
+        <img
+          src="./assets/img/depto/comedor2.jpeg"
+          alt=""
+          data-img-mostrar="6"
+        />
+        <img
+          src="./assets/img/depto/habitacion2.jpeg"
+          alt=""
+          data-img-mostrar="10"
+        />
+        <img src="./assets/img/depto/baño.jpeg" alt="" data-img-mostrar="14" />
+      </div>
+      <div class="columna">
+        <img
+          src="./assets/img/depto/living1.jpeg"
+          alt=""
+          data-img-mostrar="3"
+        />
+        <img
+          src="./assets/img/depto/comedor3.jpeg"
+          alt=""
+          data-img-mostrar="7"
+        />
+        <img
+          src="./assets/img/depto/habitacion3.jpeg"
+          alt=""
+          data-img-mostrar="11"
+        />
+        <img
+          src="./assets/img/depto/cochera.jpeg"
+          alt=""
+          data-img-mostrar="15"
+        />
+      </div>
+    </section>
+  </body>
+</html>

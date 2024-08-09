@@ -39,7 +39,7 @@
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body onload="reproducir()">
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
       <div class="container d-flex align-items-center justify-content-between">
@@ -103,12 +103,12 @@
             </li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
-          <audio
-            autoplay
-            loop
-            id="audio"
-            src="./assets/audio/Warm Abstraction by AudioCoffee.mp3"
-          ></audio>
+          <!-- <audio id="audio" autoplay loop preload="auto">
+            <source
+              src="./assets/audio/Warm Abstraction by AudioCoffee.mp3"
+              type="audio/mp3"
+            />
+          </audio> -->
         </nav>
         <!-- .navbar -->
       </div>
@@ -177,7 +177,7 @@
             <h3>
               El departamento cuenta con los siguientes <span>Servicios</span>
             </h3>
-            <p>Hace click para ver las fotos.</p>
+            <!-- <p>Hace click para ver las fotos.</p> -->
           </div>
 
           <div class="row">
@@ -187,7 +187,7 @@
               <div class="icon-box">
                 <div class="icon"><i class="bx bxs-bed"></i></div>
                 <h4 class="title">
-                  <a href="./habitaciones.html">Dormitorios</a>
+                  <a href="">Dormitorios</a>
                 </h4>
                 <p class="description">
                   Dormitorio principal con cama matrimonial y segundo dormitorio
@@ -216,7 +216,7 @@
                   </svg>
                 </div>
                 <h4 class="title">
-                  <a href="./living.html">Living/Comedor</a>
+                  <a href="">Living/Comedor</a>
                 </h4>
                 <p class="description">
                   Ambiente iluminado y cálido, con sofá y mesa para 4 personas.
@@ -229,7 +229,7 @@
             >
               <div class="icon-box">
                 <div class="icon"><i class="bx bxs-coffee-alt"></i></div>
-                <h4 class="title"><a href="./living.html">Cocina</a></h4>
+                <h4 class="title"><a href="">Cocina</a></h4>
                 <p class="description">
                   Equipada con todo lo necesario para que puedas preparar tus
                   comidas.
@@ -243,7 +243,7 @@
               <div class="icon-box">
                 <div class="icon"><i class="bx bxs-car"></i></div>
                 <h4 class="title">
-                  <a href="./cochera.html">Estacionamiento Privado</a>
+                  <a href="">Estacionamiento Privado</a>
                 </h4>
                 <p class="description">Cochera cubierta.</p>
               </div>
@@ -439,6 +439,20 @@
         </div>
       </section>
       <!-- End Features Section -->
+      <section>
+        <div class="container">
+          <div class="section-title">
+            <h3>Galería de <span>Fotos</span></h3>
+            <br />
+
+            <div class="contenedor">
+              <a href="./gallery.html" target="_blank"
+                ><button type="button" class="">Ir a Galería</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- ======= Cta Section ======= -->
       <!-- <section id="cta" class="cta">
@@ -1248,6 +1262,27 @@
       </section>
       <!-- End F.A.Q Section -->
 
+      <!-- ======= F.A.Q Section ======= -->
+      <section id="faq" class="faq">
+        <div class="container">
+          <div class="section-title">
+            <h2>Calendario</h2>
+            <h3><span>Disponibilidad</span></h3>
+          </div>
+          <div class="calendar" style="text-align: center">
+            <iframe
+              src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FArgentina%2FMendoza&bgcolor=%23ffffff&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=ZmFjMzRlMTEzNjAyZDYxOGJjZjJlYTMwNTExMzNiZGM3MTZkYWFhMTcyNWU4ZjQxY2Q4NGJjZGU0MGNjMWI2OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E67C73"
+              style="border: solid 1px #777"
+              width="800"
+              height="600"
+              frameborder="0"
+              scrolling="no"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <!-- End F.A.Q Section -->
+
       <!-- ======= Team Section ======= -->
       <!-- <section id="team" class="team">
         <div class="container">
@@ -1688,12 +1723,14 @@
 
     <!-- Audio Player -->
     <script>
+      function reproducir() {
+        audio.play();
+      }
+
       const player = document.getElementById("player");
 
-      // const audio = new Audio();
-      // audio.src = "assets/audio/Warm Abstraction by AudioCoffee.mp3";
-
-      var audio = document.getElementById("audio");
+      const audio = new Audio();
+      audio.src = "assets/audio/Warm Abstraction by AudioCoffee.mp3";
 
       player.addEventListener("click", function () {
         if (audio.paused) {
