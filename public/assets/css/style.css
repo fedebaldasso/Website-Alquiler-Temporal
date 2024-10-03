@@ -2157,3 +2157,24 @@ img {
   filter: invert(8%) sepia(46%) saturate(6135%) hue-rotate(332deg)
     brightness(115%) contrast(107%);
 }
+
+.referencias p,
+img {
+  display: inline;
+}
+
+.referencias {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.referencia1 {
+  width: 25px;
+  margin-right: 20px;
+}
+
+.referencia2 {
+  width: 20px;
+  margin-right: 20px;
+}
